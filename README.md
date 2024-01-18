@@ -1,5 +1,5 @@
-#Ilian Bakir
+# Ilian Bakir
 
-*[](./bases0.html)
+*[fichier base 0](./bases0.html)
 
-*[](./labyrinthe.html)
+*[labyrinthe](./labyrinthe.html)
