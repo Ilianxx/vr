@@ -1,0 +1,112 @@
+<html>
+
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+
+    <a-scene>
+
+      <a-assets>
+        <img id="boule" src="./murs.jpg">
+        <img id="eclat" src="./eclat.png">
+        <img id="entree" src="./lillia1.png">
+        <img id="ciel" src="./shanhai.jpg">
+        <img id="ground" src="./sol.JPG">
+        <img id="droite" src="./murs2.jpg">
+        <img id="fond" src="./murs2.jpg">
+        <img id="gauche" src="./murs.jpg">
+
+
+        <a-mixin id="side0.5" geometry="primitive: plane; height: 4; width: 0.5" material="side: double; src: #boule "> </a-mixin>
+        <a-mixin id="side1" geometry="primitive: plane; height: 4; width: 1" material="side: double; src: #boule; repeat: 2 "> </a-mixin>
+        <a-mixin id="side1.5" geometry="primitive: plane; height: 4; width: 1.5" material="side: double; src: #boule; repeat: 3 "> </a-mixin>
+        <a-mixin id="face0.5" geometry="primitive: plane; height: 4; width: 0.5" material="side: double; src: #boule "> </a-mixin>
+        <a-mixin id="face1" geometry="primitive: plane; height: 4; width: 1" material="side: double; src: #boule; repeat: 2 "> </a-mixin>
+        <a-mixin id="face1.5" geometry="primitive: plane; height: 4; width: 1.5" material="side: double; src: #boule; repeat: 3 "> </a-mixin>
+
+      </a-assets>
+
+   
+      
+      
+
+      
+        <a-entity position="0 1 -1"  rotation="0 90 0" mixin="side1"></a-entity>
+        <a-entity position="-0.5 1 0"  rotation="0 90 0" mixin="side1"></a-entity>
+        <a-entity position="-1 1 -0.5"  rotation="0 90 0" mixin="side1"></a-entity>
+        <a-entity position="-1.5 1 -1"  rotation="0 90 0" mixin="side1"></a-entity>
+        <a-entity position="-1.5 1 0.5"  rotation="0 90 0" mixin="side1"></a-entity>
+        <a-entity position="-1 1 1.5"  rotation="0 90 0" mixin="side1"></a-entity>
+        <a-entity position="-1.49778 1 2.01508" rotation="0 -0.232 0" mixin="side1" material="repeat: 2 1" scale="1.02723 1 1"></a-entity>
+        <a-entity position="0 1 0.75"  rotation="0 90 0" mixin="side0.5"></a-entity>
+        <a-entity position="1 1 -0.35538" rotation="0 90 0" mixin="side0.5" material="" scale="1.3897 1 1"></a-entity>
+        <a-entity position="1 1 -2.72057" rotation="0 90 0" mixin="side0.5" material=""></a-entity>
+        <a-entity position="1 1 1.25"  rotation="0 90 0" mixin="side1.5"></a-entity>
+        <a-entity position="-1.066 1 3.35752" rotation="0 90 0" mixin="side1.5" material="repeat: 3 1" scale="0.832 1 1"></a-entity>
+        <a-entity position="-0.25 1 -0.5"  rotation="0 0 0" mixin="face0.5"></a-entity>
+        <a-entity position="-0.25 1 0.5"  rotation="0 0 0" mixin="face0.5"></a-entity>
+        <a-entity position="-0.75 1 -1"  rotation="0 0 0" mixin="face0.5"></a-entity>
+        <a-entity position="-1.1333 1 -1.5" rotation="" mixin="face0.5" material="" scale="1.4883 1 1"></a-entity>
+        <a-entity position="-1.75 1 -0.5"  rotation="0 0 0" mixin="face0.5"></a-entity>
+        <a-entity position="-1.25 1 1"  rotation="0 0 0" mixin="face0.5"></a-entity>
+        <a-entity position="0.5 1 1"  rotation="0 0 0" mixin="face1"></a-entity>
+        <a-entity position="1.26128 1 0" rotation="" mixin="face1.5" material="repeat: 3 1"></a-entity>
+        <a-entity position="0.75 1 -1.47596" rotation="" mixin="face1.5" material="repeat: 3 1"></a-entity>
+
+        <a-plane position="-0.42336 1.36794 -0.04061" rotation="0 76.23489943113168 0" width="1" height="2" color="whithe" side="double" src="#entree" transparent="true" material="" geometry="" scale="0.722 0.631 1">
+        </a-plane>
+
+        <a-plane position="-1.41702 0.68303 -1.86121" rotation="0 76.235 0" width="1" height="2" color="whithe" side="double" src="#eclat" transparent="true" material="" geometry="" scale="0.722 0.631 1">
+        </a-plane>
+
+        <a-plane id="fond" position="-0.5 1 -2.96406" rotation="" width="3" height="4" side="double" src="#droite" material="" geometry="">
+        </a-plane>
+
+        <a-plane id="gauche fond" position="-2 1 -0.04159" rotation="0 90 0" width="4" height="4" side="double" src="#droite" material="" geometry="" scale="1.99111 1 1">
+        </a-plane>
+
+        <a-plane position="1.5748 0.683 -3.4878" rotation="0 76.235 0" width="1" height="2" color="whithe" side="double" src="#eclat" transparent="true" material="" geometry="" scale="0.722 0.631 1">
+        </a-plane>
+
+        <a-plane position="1.5748 0.683 3.35277" rotation="0 76.235 0" width="1" height="2" color="whithe" side="double" src="#eclat" transparent="true" material="" geometry="" scale="0.722 0.631 1">
+        </a-plane>
+
+        <a-plane id="reussite" position="-1.04755 0.45333 8.35292" rotation="0 -179.745 0" width="6" height="4" side="double" src="#droite" material="" geometry="" scale="0.523 1 1">
+        </a-plane>
+
+        <a-plane id="solreussite" position="-0.97167 -1.38027 8.66394" rotation="-89.60200479153379 -39.824577466158125 -140.17641640993642" width="6" height="4" side="double" src="#droite" material="" geometry="" scale="0.94203 1.34524 1">
+        </a-plane>
+
+        <a-plane id="sollabyrinthe" position="0.05925 -1.03881 -0.29579" rotation="-89.60200479153379 -39.824577466158125 -140.17641640993642" width="6" height="4" side="double" src="#droite" material="" geometry="" scale="1.74072 2.73154 1">
+        </a-plane>
+
+        <a-plane id="droite fond" position="2 1 -0.01733" rotation="0 90 0" width="6" height="4" side="double" src="#droite" material="" geometry="" scale="1.3337 1 1">
+        </a-plane>
+
+        <a-plane id="d devant fond" position="0.46018 1 3.96996" rotation="" width="2" height="4" side="double" src="#boule" repeat="4 " material="repeat: 4 1" geometry="" scale="1.53709 1 1">
+        </a-plane>
+
+        
+        <a-plane id="prolongement 2" position="0.00291 1 -4" rotation="" width="1" height="4" side="double" src="#boule" repeat="2 " material="repeat: 2 1" geometry="" scale="3.99847 1 1">
+        </a-plane>
+
+        <a-plane position="0 0 -0.01799" rotation="-90 0 0" width="4" height="6" src="#ground" material="" geometry="" scale="1 1.31846 1">
+        </a-plane>
+        </a-plane>
+
+        <a-entity light="color: #BBB; type: ambient" data-aframe-default-light="" aframe-injected="" position="0 0 -2.38752"></a-entity>
+
+
+    </a-entity> 
+  
+
+      <a-sky src="#ciel"></a-sky>
+    </a-scene>
+    
+
+
+  </body>
+
+</html>
