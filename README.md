@@ -4,4 +4,4 @@
 
 * [labyrinthe](./labyrinthe.html)
 
-* [labyrinthe2](./labyrinthe2/labyrinthev2.html)
+* [labyrinthe2](./labyrinthev2.html)
