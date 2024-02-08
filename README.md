@@ -6,5 +6,5 @@
 
 * [labyrinthe2](./vr%20magique/vscode/vr/labyrinthev2.html)
 
-* [whatamess](./whatamess/mess.html)
+* [whatamess](./mess.html)
 
